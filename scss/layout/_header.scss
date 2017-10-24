@@ -1,0 +1,22 @@
+header{
+	height: 20vh;
+}
+
+.header-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 5em 8em;
+}
+
+.header-add-timer{
+	justify-content: flex-start;
+	
+}
+.header-settings {
+	justify-content: flex-end;	
+	
+	button{
+		padding: 1em;
+	}
+}
