@@ -1,0 +1,31 @@
+//Timer
+.timer{
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+//Labels
+.timer-labels{
+	font-size: 1em;
+	text-align: center;
+	
+	p{
+		display: inline-block;
+		text-align: center;
+		padding: 20px 50px;
+	}
+}
+//Display: digits and functions
+.timer-display{
+	font-size: 5em;
+}
+
+//Play, restart
+.timer-actions{
+}
+
+.timer-actions > button{
+	padding: 40px 30px;
+}
+}

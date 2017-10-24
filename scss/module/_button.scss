@@ -1,0 +1,28 @@
+$button-size: 80px;
+
+button {
+	background: none;
+	padding: 0;
+	border: none;
+}
+
+button:focus{
+	outline: 0;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+
+button.btn-reg > img {
+	width: $button-size;
+}
+
+button.btn-md > img {
+	width: $button-size/1.5;
+}
+
+button.btn-sm > img {
+	width: $button-size/2;
+}

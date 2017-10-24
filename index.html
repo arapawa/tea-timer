@@ -20,58 +20,85 @@
 
   <!-- TODO: Add favicons, home screen icons for Safari, iOS, tile icons for Windows -->
 
-
   </head>
   <body>
-  <div id="container">
-      
-    
-  <header>
-    <div class="header-left">
-      <button id="button-add" class="header-button" aria-label="Add Tea"></button>
-    </div>
-    <div class="header-right">
-      <button id="button-colors" class="header-button" aria-label="Toggle Colors"></button>
-      <button id="button-sound" class="header-button" aria-label="Toggle Sound"></button>
-    </div>
-  </header>
-
-  <main class="main">
-    <div class="timer-container">
-      <div class="timer-time">
-        <div class="timer-labels">
-          <p class="label-minutes">Minutes</p>
-          <p class="label-seconds">Seconds</p>
-        </div>
-        <div class="timer-text-container">
-          <button id="button-subtract-time" class="timer-edit-button" aria-label="Subtract Time"></button>
-          <p class="timer-minutes-text">00</p>
-          <p class="timer-colon-text">:</p>
-          <p class="timer-seconds-text">00</p>
-          <button id="button-add-time" class="timer-edit-button" aria-label="Add Time"></button>
-        </div>
-      </div>
-      <div class="timer-actions">
-        <button id="button-start" class="timer-button" aria-label="Start Timer"></button>
-        <button id="button-reset" class="timer-button" aria-label="Reset Timer"></button>
-      </div>
-    </div>
-    <div class="current-tea-container">
-      <div class="current-tea-text">
-        <p>[placeholder]</p>
-      </div>
-      <div class="current-tea-buttons">
-        <button id="button-tea-1" class="current-tea-icon selected" aria-label="Current Tea"></button>
-      </div>
-    </div>
-
-
-
-
-    
-  </main>
-
-  </div>
+  
+<!-- header: add tea timer and settings -->
+ <header>
+ 	<div class="header-container">
+		<div class="header-add-timer">
+			<button class="btn-md" aria-label="Add tea timer">
+				<img src="assets/icon-add-timer.svg" alt="Add tea timer icon">
+			</button>
+		</div>
+		<div class="header-settings">
+			<button class="btn-sm" aria-label="Toggle colors">
+				<img src="assets/icon-colorwheel.svg" aria-label="Toggle colors">
+			</button>
+			<button class="btn-sm" aria-label="Toggle audio">
+				<img src="assets/icon-speaker-on.svg" aria-label="Toggle audio">
+			</button>
+		</div>
+ 	</div>
+ </header>
+ 
+ <!-- main meal: timer and selected tea steeping -->
+ <main class="container">
+ 	<!-- timer: labels, display (functions, digits), timer-actions -->
+ 	<div class="timer"> 
+		<div class=timer-labels>
+			<p class='timer-labels_min'>Minutes</p>
+			<p class='timer-labels_sec'>Seconds</p>
+		</div><!-- /.timer-labels -->
+		<div class="timer-display">
+			<button class="timer-display-function_subtract" aria-label="Subtract seconds from timer">-</button>
+			<span class="timer-display-digits_min">00</span>
+			<span class="timer-display-digits_colon">:</span>
+			<span class="timer-display-digits_sec">00</span>
+			<button class="timer-display-function_add" aria-label="Add seconds to timer">+</button>
+		</div><!-- /.timer-digits -->		
+		<div class="timer-actions">
+			<button class='timer_btn-play btn-reg' aria-label="Start timer">
+				<img src="assets/icon-play.svg" alt="Start timer icon">
+			</button>
+			<button class='timer_btn-reset btn-reg' aria-label="Reset timer">
+				<img src="assets/icon-restart.svg" aria-label="Restart timer icon">
+			</button>
+		</div><!-- /.timer-actions -->
+	</div><!-- /.timer -->
+ 
+ 	<!-- Selected teas on steep. -->
+ 	<div class="selected-tea">
+ 		<div class="selected-tea-type">
+ 			<p class="selected-tea-type">White Tea</p>
+ 		</div>
+ 		<div class="selected-tea-icon">
+ 			<button class="selected-tea-icon btn-sm" aria-label="selected steeping tea">
+				<img src="assets/icon-cup-timer.svg" aria-label="selected tea icon">				
+			</button>
+			<button class="selected-tea-icon btn-sm" aria-label="selected steeping tea">
+				<img src="assets/icon-cup-timer.svg" aria-label="selected tea icon">				
+			</button>
+			<button class="selected-tea-icon btn-sm" aria-label="selected steeping tea">
+				<img src="assets/icon-cup-timer.svg" aria-label="selected tea icon">				
+			</button>
+ 		</div>
+ 	</div><!-- /selected-tea -->
+ 	
+ 	<!-- Footer -->
+<!--
+ 	<footer>
+ 		<div class="lic-info">
+ 			<p>Created by: Arapawa Studio (arapawastud.io)</p>
+ 		</div>
+ 	</footer>
+-->
+ 
+ 
+ 
+ </main> 
+ 
+     
   <!-- scripts -->
   <script href="js/scripts.js" type="text/javascript"></script>
   <script type="text/javascript">
