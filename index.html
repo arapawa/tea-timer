@@ -27,15 +27,15 @@
  <header>
  	<div class="header-container">
 		<div class="header-add-timer">
-			<button class="btn-md" aria-label="Add tea timer">
+			<button id="btnAddTea" class="btn-md" aria-label="Add tea timer">
 				<img src="assets/icon-add-timer.svg" alt="Add tea timer icon">
 			</button>
 		</div>
 		<div class="header-settings">
-			<button class="btn-sm" aria-label="Toggle colors">
+			<button id="btnColors" class="btn-sm" aria-label="Toggle colors">
 				<img src="assets/icon-colorwheel.svg" aria-label="Toggle colors">
 			</button>
-			<button class="btn-sm" aria-label="Toggle audio">
+			<button id="btnSound" class="btn-sm" aria-label="Toggle audio">
 				<img src="assets/icon-speaker-on.svg" aria-label="Toggle audio">
 			</button>
 		</div>
@@ -51,17 +51,17 @@
 			<p class='timer-labels_sec'>Seconds</p>
 		</div><!-- /.timer-labels -->
 		<div class="timer-display">
-			<button class="timer-display-function_subtract" aria-label="Subtract seconds from timer">-</button>
+			<button id="btnSubtractTime" class="timer-display-function_subtract" aria-label="Subtract seconds from timer">-</button>
 			<span class="timer-display-digits_min">00</span>
 			<span class="timer-display-digits_colon">:</span>
 			<span class="timer-display-digits_sec">00</span>
-			<button class="timer-display-function_add" aria-label="Add seconds to timer">+</button>
+			<button id="btnAddTime" class="timer-display-function_add" aria-label="Add seconds to timer">+</button>
 		</div><!-- /.timer-digits -->		
 		<div class="timer-actions">
-			<button class='timer_btn-play btn-reg' aria-label="Start timer">
+			<button id="btnStart" class='timer_btn-play btn-reg' aria-label="Start timer">
 				<img src="assets/icon-play.svg" alt="Start timer icon">
 			</button>
-			<button class='timer_btn-reset btn-reg' aria-label="Reset timer">
+			<button id="btnReset" class='timer_btn-reset btn-reg' aria-label="Reset timer">
 				<img src="assets/icon-restart.svg" aria-label="Restart timer icon">
 			</button>
 		</div><!-- /.timer-actions -->
@@ -73,13 +73,13 @@
  			<p class="selected-tea-type">White Tea</p>
  		</div>
  		<div class="selected-tea-icon">
- 			<button class="selected-tea-icon btn-sm" aria-label="selected steeping tea">
+ 			<button id="btnSelectedTea1" class="selected-tea-icon btn-sm" aria-label="selected steeping tea">
 				<img src="assets/icon-cup-timer.svg" aria-label="selected tea icon">				
 			</button>
-			<button class="selected-tea-icon btn-sm" aria-label="selected steeping tea">
+			<button id="btnSelectedTea2" class="selected-tea-icon btn-sm" aria-label="selected steeping tea">
 				<img src="assets/icon-cup-timer.svg" aria-label="selected tea icon">				
 			</button>
-			<button class="selected-tea-icon btn-sm" aria-label="selected steeping tea">
+			<button id="btnSelectedTea3" class="selected-tea-icon btn-sm" aria-label="selected steeping tea">
 				<img src="assets/icon-cup-timer.svg" aria-label="selected tea icon">				
 			</button>
  		</div>
